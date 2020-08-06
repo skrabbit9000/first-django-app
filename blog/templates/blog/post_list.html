@@ -8,22 +8,12 @@
     <div>
       <h1><a href="/">skrabbit's blog</a></h1>
     </div>
+    {% for post in posts %}
     <div>
-      <p>published: 14.06.2014, 11:35</p>
-      <h2><a href="">First Post</a></h2>
-      <p>
-        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
-        ridiculus mus. Sed eros ante, mattis ullamcorper, posuere quis, tempor
-        vel.
-      </p>
+        <p>published: {{ post.published_date }}</p>
+        <h2><a href="">{{ post.title}}</a></h2>
+        <p>{{ post.text|linebreaksbr }}</p>
     </div>
-    <div>
-      <p>published: 15:06:2014, 2:40</p>
-      <h2><a href="">Second Post</a></h2>
-      <p>
-        Facilisi. Donec ipsum enim, congue in, tempus id, pulvinar sagittis,
-        leo. Donec et elit in nunc blandit auctor. Nulla congue urna.
-      </p>
-    </div>
+    {% endfor %}
   </body>
 </html>
