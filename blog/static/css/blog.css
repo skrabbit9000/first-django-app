@@ -43,6 +43,7 @@ h4 {
   width: 100%;
 }
 
+/*
 .top_menu,
 .top-menu:hover,
 .top-menu:visited {
@@ -51,6 +52,15 @@ h4 {
   font-size: 26pt;
   margin-right: 20px;
 }
+*/
+
+.top-menu {
+    color: #ffffff;
+    float: right;
+    font-size: 24pt;
+    margin-right: 20px;
+}
+
 
 .post {
   margin-bottom: 70px;
